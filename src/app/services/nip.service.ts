@@ -3,7 +3,7 @@ import { NipData } from "@/app/model/NipData";
 export function getNipInitialMock(): NipData {
     return {
       nome: 'Leandro Henrique',
-      nip: 123456,
+      nip: 111111,
       dataAbertura: '29-01-2022',
       email: 'leandro.henrique@gmail.com',
       telefone: '(61) 9 9999-9999',
@@ -23,7 +23,7 @@ export function getNipInitialMock(): NipData {
   export function getNipErrorMock(): NipData {
     return {
       nome: 'Leandro Henrique',
-      nip: 123456,
+      nip: 999999,
       dataAbertura: '29-01-2022',
       email: 'leandro.henrique@gmail.com',
       telefone: '(61) 9 9999-9999',
@@ -40,3 +40,26 @@ export function getNipInitialMock(): NipData {
       },],
     };
   }
+
+
+  // add novos fluxos 
+  export function getNipWithoutInterlocutorMock(): NipData {
+    return {
+      nome: 'Joana Lima',
+      nip: 222222,
+      dataAbertura: '10-02-2022',
+      email: 'joana@example.com',
+      telefone: '(11) 9 8888-8888',
+      interlocutor: false,
+      statusFluxo: 'sem_interlocutor',
+      situationData: [{
+        title: 'Há um interlocutor?',
+        NoReceptor: 'Não há',
+        yesReceptor: 'Sim',
+        labelSucess: 'Interlocutor',
+        labelSucessStatus: 'NÃO INFORMADO',
+        labelSucessUser: 'na abertura da NIP.',
+      }],
+    };
+  }
+  

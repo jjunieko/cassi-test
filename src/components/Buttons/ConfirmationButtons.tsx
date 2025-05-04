@@ -17,7 +17,7 @@ export default function NipConfirmationButtons({
     <div className="mt-6">
       <div className="w-full h-[1px] bg-gray-200 mb-4" />
       <h2 className="text-lg font-bold text-[#2D2D2D] mb-4">{title}</h2>
-      <div className="flex gap-4">
+      <div className="flex flex-col sm:flex-row gap-4">
         <button
           onClick={onNo}
           className="px-6 py-2 border border-[#002D4B] text-[#002D4B] rounded-md hover:bg-gray-100"

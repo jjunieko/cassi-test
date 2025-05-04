@@ -42,16 +42,18 @@ export default function ContactVerificationModal({
             <Input
               type="email"
               value={email}
-              onChange={(e) => onChange({ nome, email: e.target.value, telefone })}
+              onChange={(e) => onChange({ nome, telefone, email: e.target.value })}
             />
           </div>
           <div>
             <label className="block font-semibold mb-1">Celular</label>
+
             <Input
               type="tel"
               value={telefone}
               onChange={(e) => onChange({ nome, email, telefone: e.target.value })}
             />
+
           </div>
         </div>
 
