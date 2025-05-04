@@ -6,7 +6,7 @@ import { useSearchParams } from 'next/navigation';
 import { useAppDispatch } from '@/redux/store/hooks';
 import { setUserData, setAnswered, setStep, setShowModal, setFluxoStatus } from '@/redux/nipSlice';
 import NotificationBody from '@/components/NotificationBody/NotificationBody';
-import { getNipByNumber } from '@/app/services/nipBackendService';
+import { getNipByNumber } from '@/app/services/nipBackend.service';
 
 export default function NipPage() {
   const params = useSearchParams();

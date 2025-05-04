@@ -19,7 +19,7 @@ export default function HeaderSubmenu() {
         </div>
 
         {/* Mobile menu */}
-        <div className="md:hidden flex flex-col items-center">
+        <div data-testid="mobile-menu" className="md:hidden flex flex-col items-center">
           <button
             onClick={() => setOpen(!open)}
             className="text-sm font-medium text-[#2D2D2D] flex items-center gap-1"

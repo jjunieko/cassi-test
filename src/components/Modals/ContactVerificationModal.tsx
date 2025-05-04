@@ -40,15 +40,16 @@ export default function ContactVerificationModal({
           <div>
             <label className="block font-semibold mb-1">E-mail</label>
             <Input
+              id="email"
               type="email"
               value={email}
               onChange={(e) => onChange({ nome, telefone, email: e.target.value })}
             />
           </div>
           <div>
-            <label className="block font-semibold mb-1">Celular</label>
-
+            <label htmlFor="telefone" className="block font-semibold mb-1">Celular</label>
             <Input
+              id="telefone"
               type="tel"
               value={telefone}
               onChange={(e) => onChange({ nome, email, telefone: e.target.value })}

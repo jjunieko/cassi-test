@@ -29,7 +29,7 @@ yarn
 
 
 ##  Teste
-npm run test
+npm run test ou npx jest
 
 ## Estrutura
 

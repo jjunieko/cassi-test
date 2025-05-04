@@ -1,7 +1,7 @@
 import { getNipErrorMock, getNipInitialMock } from './nip.service';
 
 export function generateNipEmailLink(tipo: 'inicial' | 'erro') {
-  const baseUrl = 'http://localhost:3000/pages/email'; // Página que trata os parâmetros e redireciona
+  const baseUrl = 'http://localhost:3000/pages/email'; 
   const params = new URLSearchParams({ tipo });
   return `${baseUrl}?${params.toString()}`;
 }

@@ -1,5 +1,3 @@
-
-
 import { configureStore } from '@reduxjs/toolkit';
 import nipReducer from '@/redux/nipSlice';
 
